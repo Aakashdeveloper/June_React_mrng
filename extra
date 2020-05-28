@@ -1,0 +1,83 @@
+https://code.visualstudio.com/
+ https://nodejs.org/en/ 
+https://github.com/ 
+https://github.com/Aakashdeveloper
+ https://git-scm.com/downloads (only window user)
+https://www.youtube.com/channel/UC26NMdgQBbY6wunk_vZwQZQ/videos?view_as=subscriber
+https://github.com/Aakashdeveloper/may_react_evng_20
+
+
+Basic JavaScript
+Npm
+
+React = 3
+React_hooks -1
+React-Redux =2
+React-Saga -1
+React-GarphQL 1
+React-JWT(Login Logut)-1
+Basic React Native=1
+----------------------
+Testing
+
+Depolyment
+-> MERN
+-> Docker
+-> Nginx
+
+Mock API
+json-server
+
+Github
+
+--------NOT--------------
+API
+GarphQL
+Login/Logout
+
+---------------------------------------
+
+json
+> JavaScript Script Objectt Notation
+> Way to represent the data
+> Key Value pair
+
+[
+    {
+        name:'John',
+        class:'Ui'
+    },
+    {
+        name:'Ammy',
+        class:'React'
+    }
+]
+
+////////////////
+>Global Package 
+# Install in my system directly
+# We use global package to create application
+# Will not add in package.json
+
+//////
+Step To Create React App
+**Node Js must be install
+
+##Window
+>>>>One time<<<<<
+> Run you cmd as admin
+> npm i -g create-react-app
+
+>>All Next Time<<
+>  Navigate to folder
+>  create-react-app appname
+
+
+##Mac
+>>>>One time<<<<<
+> Run you terminal
+> sudo npm i -g create-react-app
+
+>>All Next Time<<
+>  Navigate to folder
+>  create-react-app appname

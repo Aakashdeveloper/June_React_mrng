@@ -1,0 +1,22 @@
+node package manager
+
+> Local Package
+> Global Package
+
+
+>>>>>>>>Package.json<<<<<<<<<<<<<<
+> Entry point to the application
+> Meta Data
+> Manage Dependency
+
+>>>>>>Step to create package.json<<<<<<<<<
+**Must Install nodeJs in system
+> navigate to folder using cmd
+> type npm init
+> answer all questions
+> type "yes"
+
+
+>>>>>>>>>Install Local Package<<<<<<<<<<<
+> navigate to folder using cmd
+> npm install react / npm i react
