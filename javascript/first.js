@@ -10,7 +10,8 @@ Boolean= true/ false
 //////////////////////////////////
 //es5
 function add(a,b){
-    return a+b
+    var data = [a,b]
+    return data
 }
 
 add(1,2)
@@ -43,4 +44,4 @@ var myage = "my age is "+age
 
 //Es6
 var age = 10
-var myage = `my age is ${age}`
+var myage = `my age is ${age} \`hh\`  `

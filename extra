@@ -83,5 +83,19 @@ Step To Create React App
 >  create-react-app appname
 
 ////////
-> JavaScript
-> First Compenet of react
+Run the application
+////////
+
+> Navigate to the folder
+> npm start
+> localhost:3000
+
+>src > index.js 
+>public  > index.html
+
+/////
+classes
+state to props
+pass the props
+make class component
+adding css to component
