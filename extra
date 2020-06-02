@@ -94,8 +94,16 @@ Run the application
 >public  > index.html
 
 /////
-classes
 state to props
-pass the props
-make class component
 adding css to component
+events in react(click)
+bind static data
+
+
+State & props
+State ==> it is a local variable
+Props ==> To pass data between nested Componen
+
+
+componentA    ===>   ComponentB
+stateA        Props    stateB

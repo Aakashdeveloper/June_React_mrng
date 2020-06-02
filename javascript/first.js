@@ -45,3 +45,42 @@ var myage = "my age is "+age
 //Es6
 var age = 10
 var myage = `my age is ${age} \`hh\`  `
+
+//////////Classes//////////
+function language(name,country){
+    this.name=name,
+    this.country=country
+}
+
+class location{
+    constructor(lat,long){
+        this.lat = lat,
+        this.long = long
+    }
+}
+
+class language1{
+    constructor(name,country){
+        this.name=name,
+        this.country=country
+    }
+    
+}
+
+
+//////////////////
+class location{
+    constructor(lat,long){
+        this.lat = lat,
+        this.long = long
+    }
+}
+
+class language1 extends location{
+    constructor(name,country,lat,long){
+        super(lat,long)
+        this.name=name,
+        this.country=country
+    }
+    
+}
