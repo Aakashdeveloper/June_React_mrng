@@ -1,0 +1,50 @@
+import React,{Component} from 'react';
+
+class Header extends Component {
+    constructor(){
+        super()
+
+        this.state={
+            title:'Developer Funnel'
+        }
+    }
+
+    render(){
+        const mystyles = {
+            header:{
+                backgroundColor:'teal'
+            },
+            logo:{
+                fontSize:'30px',
+                color:'#fff',
+                textAlign:'center'
+            }
+        }
+        return(
+            <header style={mystyles.header}>
+                <div style={mystyles.logo}>{this.state.title}</div>
+                <center>
+                    <input/>
+                </center>
+                <hr/>
+            </header>
+        )
+    }
+}
+
+export default Header;
+
+
+/*
+const Header = () => {
+    return(
+        <header>
+            <center>
+                <h2>Developer Funnel</h2>
+            </center>
+            <hr/>
+        </header>
+    )
+}
+*/
+

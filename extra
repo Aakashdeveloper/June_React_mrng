@@ -94,10 +94,12 @@ Run the application
 >public  > index.html
 
 /////
-state to props
-adding css to component
-events in react(click)
 bind static data
+display data
+Child to parent
+Map
+Filter
+Serach bar
 
 
 State & props
@@ -107,3 +109,12 @@ Props ==> To pass data between nested Componen
 
 componentA    ===>   ComponentB
 stateA        Props    stateB
+
+
+///////
+tagName
+className
+id 
+
+https://www.w3schools.com/jsref/jsref_map.asp
+https://www.w3schools.com/jsref/jsref_filter.asp

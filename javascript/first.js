@@ -84,3 +84,10 @@ class language1 extends location{
     }
     
 }
+
+var a = 10
+undefined
+a >10 ? 'Hii':'Bie'
+"Bie"
+a===10 ? 'Hii':'Bie'
+"Hii"
