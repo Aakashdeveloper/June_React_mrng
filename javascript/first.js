@@ -91,3 +91,42 @@ a >10 ? 'Hii':'Bie'
 "Bie"
 a===10 ? 'Hii':'Bie'
 "Hii"
+
+
+var myarray = ["a","b","c","d"]
+
+myarray.map((data) => { console.log(data)})
+
+var numarray = [3,5,7,8,9]
+
+numarray.map((data) => { return data-1})
+
+
+var numarray = [47,23,56,32,21,43]
+
+numarray.filter((data) => { return data>25})
+
+var numarray = [47,23,56,32,21,43]
+
+numarray.filter((data) => { return data>25})
+(4) [47, 56, 32, 43]
+var numarray = [47,23,56,32,21,43]
+
+numarray.map((data) => { return data>25})
+(6) [true, false, true, true, false, true]
+
+var a = [0,1,2,3]
+
+a.map((data) => { return data*2})
+a.filter((data) => { return data*2})
+
+var city = ["Amsterdam", "Dubai", "Nice", "London", "Innsburg", "NewYork", "Delhi", "Helsinki", "Paris"]
+undefined
+city.indexOf('Delhi')
+6
+city.indexOf('Nice')
+2
+city.indexOf('Pune')
+-1
+city.indexOf('Boston')
+-1
