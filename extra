@@ -118,3 +118,14 @@ id
 
 https://www.w3schools.com/jsref/jsref_map.asp
 https://www.w3schools.com/jsref/jsref_filter.asp
+
+///////////////
+Parent> Child (Props)
+Child > Parent(CallBack)
+
+(parent)
+var add = (a,b) => { return a+b}
+(child)
+add(1,2)
+
+npm i react-router-dom

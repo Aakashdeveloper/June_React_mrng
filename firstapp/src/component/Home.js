@@ -13,14 +13,10 @@ class Home extends Component {
             filtered:JSON
         }
     }
-    /*
-        var numarray = [47,23,56,32,21,43]
-        numarray.filter((data) => { return data>25})
-    */
 
     filterNews(keywords){
         const output = this.state.news.filter((data) => {
-            return (data.title.indexOf(keywords)>-1)
+            return (data.title.toLowerCase().indexOf(keywords.toLowerCase())>-1)
         })
 
         this.setState({filtered:output})
@@ -29,8 +25,8 @@ class Home extends Component {
     render(){
         return(
             <div>
-                <Header/>
-                <NewsList newsdata={this.state.news}/>
+                <Header userText={(data)=> {this.filterNews(data)}}/>
+                <NewsList newsdata={this.state.filtered}/>
                 <Footer year="2021" type="Education"/>
             </div>
         )
