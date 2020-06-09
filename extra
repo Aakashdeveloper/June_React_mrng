@@ -129,3 +129,22 @@ var add = (a,b) => { return a+b}
 add(1,2)
 
 npm i react-router-dom
+
+
+//////
+DummyApI
+////
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+
+{
+    student:[
+                {
+                    name:"s"
+                },
+                {
+                    name:"b"
+                }
+            ]
+}
