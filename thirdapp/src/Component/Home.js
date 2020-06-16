@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import Banner from './Banner';
 import ArtistList from './Artists';
 
-const url = "http://localhost:3000/artists";
+
+const url = "http://localhost:8900/artists";
 
 class Home extends Component{
     constructor(){
@@ -14,7 +15,7 @@ class Home extends Component{
     }
 
     render(){
-        console.log(this.state.artists)
+        //console.log(this.state.artists)
         return(
             <div>
                 <Banner/>
