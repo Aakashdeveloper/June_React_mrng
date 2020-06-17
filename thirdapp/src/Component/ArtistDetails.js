@@ -18,7 +18,7 @@ class ArticleDetails extends Component {
         var {details} = this.state
         return(
             <div>
-                <Headers/>
+                
                 <div className="artist_bio">
                     <div className="artist_image">
                         <span style={{
@@ -37,10 +37,15 @@ class ArticleDetails extends Component {
         )
     }
 
-    componentDidMount(){
+    async componentDidMount(){
+        const response = await axios.get(`${url}/${this.props.match.params.id}`)
+        this.setState({details:response.data})
+    }
+
+    /*componentDidMount(){
         axios.get(`${url}/${this.props.match.params.id}`)
         .then((response) => {this.setState({details:response.data})})
-    }
+    }*/
 
 
 }
