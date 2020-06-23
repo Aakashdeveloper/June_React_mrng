@@ -149,3 +149,7 @@ json-server --watch db.json --port 8900
                 }
             ]
 }
+//////////Redux/////////////
+State Management
+Transfer data in non nested component
+structure of application
