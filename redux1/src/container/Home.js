@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {moviesList} from '../actions';
+import {bindActionCreators} from 'redux';
+import DisplayComponent from '../component/DisplayComponent'
 
 class Home extends Component {
     componentDidMount(){
@@ -10,6 +12,7 @@ class Home extends Component {
         return(
             <div>
                 <h1>Redux</h1>
+                <DisplayComponent datalist={this.props.mydata}/>
             </div>
         )
     }
@@ -18,12 +21,15 @@ class Home extends Component {
 
 //Help to recive the state from the store
 function mapStateToProps(state){
-
+    console.log(state)
+    return{
+        mydata:state.films
+    }
 }
 
 //To dispatch the action
-function mapDispatchToProps(){
-
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({moviesList},dispatch)
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(Home);
