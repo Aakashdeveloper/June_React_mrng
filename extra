@@ -153,3 +153,7 @@ json-server --watch db.json --port 8900
 State Management
 Transfer data in non nested component
 structure of application
+
+
+npm i redux-promise react-slick redux-logger redux react-redux
+
