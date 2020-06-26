@@ -4,6 +4,7 @@ const Footer = () => {
     return(
         <footer>
             <div>
+                <hr/>
                 &copy; DeveloperFunnel
             </div>
         </footer>

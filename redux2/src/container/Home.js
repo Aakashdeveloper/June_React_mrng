@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import { latestNews,articletNews,galleryNews } from '../actions';
+import LatestDisplay from '../component/Home/LatestDisplay';
+import ArticleDisplay from '../component/Home/ArticleDisplay';
+import GalleryDisplay from '../component/Home/GalleryDisplay';
 
 class Home extends Component{
     componentDidMount(){
@@ -13,7 +16,9 @@ class Home extends Component{
     render(){
         return(
             <div>
-                Home Redux
+                <LatestDisplay ldata={this.props.datalist.latestdata}/>
+                <ArticleDisplay adata={this.props.datalist.articledata}/>
+                <GalleryDisplay gdata={this.props.gallerylist.gallerydata}/>
             </div>
         )
     }
@@ -22,6 +27,10 @@ class Home extends Component{
 
 function mapStateToProps(state){
     console.log(state)
+    return{
+        datalist:state.article,
+        gallerylist:state.gallery
+    }
 }
 
 Home.protoTypes={
