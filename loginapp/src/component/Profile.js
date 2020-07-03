@@ -10,7 +10,15 @@ class Profile extends Component{
         }
     }
 
+    handleLogout = () => {
+        sessionStorage.removeItem('_ltk')
+        this.props.history.push('/login')
+    }
     render(){
+        if(sessionStorage.getItem('_ltk')==null){
+            this.props.history.push('/login')
+        }
+        sessionStorage.setItem('_Rtk',this.state.user.role)
         return(
             <div className="panel panel-success">
                 <div className="panel-heading">
@@ -21,6 +29,10 @@ class Profile extends Component{
                     <h2>Your Email Id is {this.state.user.email}</h2>
                     <h2>Your Role is {this.state.user.role}</h2>
                 </div>
+                <button className="btn btn-danger"
+                onClick={this.handleLogout}>
+                    Logout
+                </button>
             </div>
         )
     }
@@ -29,7 +41,7 @@ class Profile extends Component{
         fetch(url,{
             method:'GET',
             headers:{
-                'x-access-token':'token value from login'
+                'x-access-token':sessionStorage.getItem('_ltk')
             }
         })
         .then((res) => res.json())

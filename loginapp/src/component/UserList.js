@@ -13,9 +13,15 @@ class UserList extends Component{
     }
 
     render(){
+        if(sessionStorage.getItem('_ltk')==null){
+            this.props.history.push('/login')
+        }
+        if(sessionStorage.getItem('_ltk')!==null && sessionStorage.getItem('_Rtk')!=='admin'){
+            this.props.history.push('/profile')
+        }
         return(
             <div>
-                <UserDisplay userData={this.state.users}/>
+                <UserDisplay userData={this.state.user}/>
             </div>
         )
     }
@@ -26,6 +32,7 @@ class UserList extends Component{
         })
         .then((res) => res.json())
         .then((data) => {
+            console.log(data)
             this.setState({
                 user:data
             })
