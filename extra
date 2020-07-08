@@ -182,5 +182,9 @@ Setup mongodb
 npm start
 ///////
 
+For React Native
+////
+sudo npm i create-react-native-app
+create-react-native-app mymobi
 
 
